@@ -150,7 +150,7 @@ int free_matrix(int** matrix, int row, int col) // 배열에 대한 동적할당
 /* assign random values to the given matrix */
 int fill_data(int** matrix, int row, int col)
 {
-    _sleep(500); // seed값 차이를 두기 위해 0.5초 대기
+    _sleep(1000); // seed값 차이를 두기 위해 1초 대기
     srand((unsigned)time(NULL)); // srand()함수를 이용하여 seed값 변경
     for(int i = 0; i < row; i++)
     {
